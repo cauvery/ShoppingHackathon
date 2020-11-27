@@ -1,0 +1,4 @@
+# system level config
+system:
+  env: dev
+  DEMO_APP_URL: "https://demo.applitools.com/tlcHackathonDev.html"
