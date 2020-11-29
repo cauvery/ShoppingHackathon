@@ -71,7 +71,7 @@ def eyes_setup(request):
     # Create SeleniumConfiguration.
     (
         eyes.configure
-            .set_api_key(os.environ['APPLITOOLS_API_KEY'])  # APPLITOOLS_API_KEY
+            .set_api_key(os.environ['APPLITOOLS_API_KEY'])
             .set_app_name("AppliFashion")
             .set_batch(BatchInfo("Holiday Shopping”"))
             .add_browser(1200, 800, BrowserType.CHROME)

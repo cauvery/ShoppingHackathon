@@ -14,7 +14,7 @@ def test_main_page(Mgr, driver_setup, eyes_setup):
     driver = driver_setup
     eyes = eyes_setup
     eyes.batch = b
-    eyes.open(driver, "AppliFashion", "Test 1", {'width': 1200, 'height': 800})
+    eyes.open(driver, "AppliFashion", "Test 1")  # {'width': 1200, 'height': 800}
     eyes.force_full_page_screenshot = True
 
     conf = Mgr["conf"]
@@ -30,7 +30,7 @@ def test_filtered_product_grid(Mgr, driver_setup, eyes_setup):
     driver = driver_setup
     eyes = eyes_setup
     eyes.batch = b
-    eyes.open(driver, "AppliFashion", "Test 2", {'width': 1200, 'height': 800})
+    eyes.open(driver, "AppliFashion", "Test 2")  # {'width': 1200, 'height': 800}
     # eyes.force_full_page_screenshot = True
 
     conf = Mgr["conf"]
@@ -51,7 +51,7 @@ def test_product_details(Mgr, driver_setup, eyes_setup):
     driver = driver_setup
     eyes = eyes_setup
     eyes.batch = b
-    eyes.open(driver, "AppliFashion", "Test 3", {'width': 1200, 'height': 800})
+    eyes.open(driver, "AppliFashion", "Test 3")  # {'width': 1200, 'height': 800}
     eyes.force_full_page_screenshot = True
 
     conf = Mgr["conf"]
